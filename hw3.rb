@@ -115,14 +115,31 @@
 # # Return the smallest of Erik's favorite numbers
 # users["Erik"][:favourite_numbers].min
 # Return an array of Avril's favorite numbers that are even
+
+def evil_even_numbers(array_of_numbers)
+  result = []
+  for number in array_of_numbers
+   result.push(number) if(number % 2 == 0)
+ end
+    
+  return result 
+end
+
+array = users["Avril"][:favourite_numbers]
+evens = evil_even_numbers(array)
+
+print evens
+puts
+
 # Return an array of Jonathans favourite numbers, sorted in ascending order and excluding duplicates
 # Add the number 7 to Eriks favorite numbers users
 # ["Erik"][:favourite_numbers] << 7
 # Change Erik's hometown to Edinburgh
+# users["Erik"][:home_town] = "Edinburgh"
 # Add a pet dog to Erik called "Fluffy"
 # ["Erik"][:pets["Fluffy"]] = :dog
 # Add yourself to the users hash
-users["Sam"] = []
+# users["Sam"] = []
 
 
 

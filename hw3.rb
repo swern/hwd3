@@ -112,13 +112,17 @@
 # # return users["Erik"][:favourite_numbers]
 # Return the type of Avrils pet Colin
 # users["Avril"][:pets]["colin"]
-# Return the smallest of Erik's favorite numbers
+# # Return the smallest of Erik's favorite numbers
+# users["Erik"][:favourite_numbers].min
 # Return an array of Avril's favorite numbers that are even
 # Return an array of Jonathans favourite numbers, sorted in ascending order and excluding duplicates
-# Add the number 7 to Erik's favorite numbers
+# Add the number 7 to Eriks favorite numbers users
+# ["Erik"][:favourite_numbers] << 7
 # Change Erik's hometown to Edinburgh
 # Add a pet dog to Erik called "Fluffy"
+# ["Erik"][:pets["Fluffy"]] = :dog
 # Add yourself to the users hash
+users["Sam"] = []
 
 
 
